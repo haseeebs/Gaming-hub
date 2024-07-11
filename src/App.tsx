@@ -1,8 +1,10 @@
+import { Button } from "@chakra-ui/react"
+
 function App() {
 
   return (
     <>
-      <p>Gaming hub...</p>
+      <Button>Gaming hub...</Button>
     </>
   )
 }

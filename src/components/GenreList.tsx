@@ -12,10 +12,10 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
 
   if (error) return null;
 
+  if (isLoading) return <GenreListSkeleton />;
+
   return (
     <List>
-      {isLoading && <GenreListSkeleton />}
-
       {data.map((genre) => (
         <ListItem key={genre.id} paddingY={"5px"}>
           <HStack>

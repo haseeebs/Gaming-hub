@@ -15,7 +15,7 @@ const GenreList = () => {
   return (
     <List>
       {data?.results.map((genre) => (
-        <ListItem key={genre.id} paddingY={"5px"}>
+        <ListItem key={genre.id} paddingY={"5px"} paddingLeft={2}>
           <HStack>
             <Image
               src={genre.image_background}

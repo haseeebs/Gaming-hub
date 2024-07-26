@@ -1,6 +1,4 @@
-// src/entities/Screenshot.ts
-
-export interface Screenshot {
+export default interface Screenshot {
     id: number;
     image: string;
 }

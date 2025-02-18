@@ -1,12 +1,13 @@
-import { HStack, Image, Link } from "@chakra-ui/react";
+import { HStack, Image } from "@chakra-ui/react";
 import logo from "../assets/Gemini_Generated_Image.png";
 import ColorModeSwitch from "./ColorModeSwitch";
 import SearchInput from "./SearchInput";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <HStack padding={"15px"}>
-      <Link top={'/'}>
+      <Link to={'/'}>
         <Image src={logo} boxSize={"100px"} />
       </Link>
       <SearchInput />
